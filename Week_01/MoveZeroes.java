@@ -34,13 +34,6 @@ public class MoveZeroes {
                 }
             }
         }
-
-        private void swap(int num, int cur) {
-            int temp;
-            temp = num;
-            num = cur;
-            cur = temp;
-        }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
