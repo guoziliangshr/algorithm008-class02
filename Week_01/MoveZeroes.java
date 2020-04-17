@@ -14,27 +14,15 @@
 // Related Topics 数组 双指针
 
 
-package leetcode.editor.cn;
-
-public class MoveZeroes {
-    public static void main(String[] args) {
-
-        Solution solution = new MoveZeroes().new Solution();
-    }
-
-    //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
-        public void moveZeroes(int[] nums) {
-            for (int LastNonZeroFoundAt = 0, cur = 0; cur < nums.length; cur++) {
-                if (nums[cur] != 0) {
-                    int temp = nums[LastNonZeroFoundAt];
-                    nums[LastNonZeroFoundAt] = nums[cur];
-                    nums[cur] = temp;
-                    LastNonZeroFoundAt++;
-                }
+class Solution {
+    public void moveZeroes(int[] nums) {
+        for (int LastNonZeroFoundAt = 0, cur = 0; cur < nums.length; cur++) {
+            if (nums[cur] != 0) {
+                int temp = nums[LastNonZeroFoundAt];
+                nums[LastNonZeroFoundAt] = nums[cur];
+                nums[cur] = temp;
+                LastNonZeroFoundAt++;
             }
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
-
 }

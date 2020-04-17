@@ -27,15 +27,10 @@
 // Related Topics 数组
 
   
-package leetcode.editor.cn;
-public class RotateArray{
-    public static void main(String[] args) {
-         Solution solution = new RotateArray().new Solution();
-    }
-    //leetcode submit region begin(Prohibit modification and deletion)
+
 class Solution {
     public void rotate(int[] nums, int k) {
-        int temp, last;
+        int last;
         for (int i = 0; i < k; i++){
             last = nums[nums.length - 1];
             for (int j = nums.length - 1; j >= 1; j--){
@@ -46,5 +41,3 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
-
-}
